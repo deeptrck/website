@@ -10,7 +10,7 @@ import TestimonialSection from '@/components/landing-page/testimonialSection';
 import { Metadata } from 'next';
 import WebinarSection from '@/components/landing-page/webinar-section';
 import PopupModal from '@/components/landing-page/informationPopUpModal';
-import GothamSection from '@/components/landing-page/GothamSection/GothamSection';
+// import GothamSection from '@/components/landing-page/GothamSection/GothamSection';
 import { ErrorBoundary } from '@/components/ErrorBoundary';
 import InsuranceSection from "@/components/landing-page/InsuranceSection";
 
@@ -34,9 +34,9 @@ export default function Home() {
       <Navbar />
       {/* <PopupModal /> */}
       <Hero />
-      <ErrorBoundary>
+      {/* <ErrorBoundary>
         <GothamSection />
-      </ErrorBoundary>
+      </ErrorBoundary> */}
       <ImpactSection />
       <BuiltForSection />
       <TestimonialSection />
