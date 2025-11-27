@@ -146,16 +146,16 @@ export function Navigation() {
 
           {/* Support link */}
           <NavigationMenuItem>
-            <Link href="#" legacyBehavior passHref>
-              <NavigationMenuLink className="bg-black text-white">Support</NavigationMenuLink>
-            </Link>
+            <NavigationMenuLink asChild>
+              <Link href="#" className="bg-black text-white">Support</Link>
+            </NavigationMenuLink>
           </NavigationMenuItem>
 
           {/* Blog link */}
           <NavigationMenuItem>
-            <Link href="/events" legacyBehavior passHref>
-              <NavigationMenuLink className="bg-black text-white">Blog & Events</NavigationMenuLink>
-            </Link>
+            <NavigationMenuLink asChild>
+              <Link href="/events" className="bg-black text-white">Blog & Events</Link>
+            </NavigationMenuLink>
           </NavigationMenuItem>
 
           {/* Investor relations */}
