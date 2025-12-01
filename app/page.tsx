@@ -36,6 +36,7 @@ export default function Home() {
       <Hero />
       {/* <ErrorBoundary>
         <GothamSection />
+        
       </ErrorBoundary> */}
       <ImpactSection />
       <BuiltForSection />

@@ -43,6 +43,7 @@ export async function POST(req: Request) {
         console.log(`Temp file saved at: ${tempPath}`);
 
         rdResult = await rd.detect({ filePath: tempPath });
+        console.log("Result data:", rdResult);
         console.log("RD status:", rdResult?.status, "score:", rdResult?.score);
       } catch (err) {
         Sentry.captureException(err); // <-- Capture Sentry error
