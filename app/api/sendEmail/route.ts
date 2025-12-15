@@ -2,8 +2,6 @@ import { google } from 'googleapis';
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function POST(req: Request) {
   const body = await req.json();
   const { firstName, lastName, email, company, department } = body;
@@ -47,36 +45,40 @@ export async function POST(req: Request) {
 
     // Send email with button to open Google Sheet
     const sheetUrl = 'https://docs.google.com/spreadsheets/d/1rxMe2_CkgxQy96RcxA_g444iRFSvp11Td4jM86uRhSA/edit?gid=0#gid=0';
+    const resendApiKey = process.env.RESEND_API_KEY;
+    if (resendApiKey) {
+      const resend = new Resend(resendApiKey);
+      await resend.emails.send({
+        from: 'onboarding@resend.dev',
+        to: emailusedforgooglesheets || '<tech@deeptrack.io>',
+        subject: 'New Webinar Registration',
+        html: `
+          <h3>New Webinar Registration</h3>
+          <ul>
+            <li><strong>Name:</strong> ${firstName} ${lastName}</li>
+            <li><strong>Email:</strong> ${email}</li>
+            <li><strong>Company:</strong> ${company}</li>
+            <li><strong>Department:</strong> ${department}</li>
+          </ul>
+          <p>Time: ${new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' })}</p>
+          <p>
+            <a href="${sheetUrl}" target="_blank" style="
+              background-color: #1a73e8;
+              color: white;
+              padding: 10px 20px;
+              text-decoration: none;
+              border-radius: 5px;
+              display: inline-block;
+              margin-top: 20px;
+            ">View Full Registration List</a>
+          </p>
+        `,
+      });
+    } else {
+      console.warn('RESEND_API_KEY not configured — skipping notification email');
+    }
 
-    await resend.emails.send({
-      from: 'onboarding@resend.dev',
-      to: emailusedforgooglesheets || '<tech@deeptrack.io>',
-      subject: 'New Webinar Registration',
-      html: `
-        <h3>New Webinar Registration</h3>
-        <ul>
-          <li><strong>Name:</strong> ${firstName} ${lastName}</li>
-          <li><strong>Email:</strong> ${email}</li>
-          <li><strong>Company:</strong> ${company}</li>
-          <li><strong>Department:</strong> ${department}</li>
-        </ul>
-        <p>Time: ${new Date().toLocaleString('en-GB', { timeZone: 'Africa/Nairobi' })}</p>
-        <p>
-          <a href="${sheetUrl}" target="_blank" style="
-            background-color: #1a73e8;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            display: inline-block;
-            margin-top: 20px;
-          ">View Full Registration List</a>
-        </p>
-      `,
-     
-    });
-
-    return NextResponse.json({ message: 'User added and email sent.' });
+    return NextResponse.json({ message: 'User added and email processed.' });
   } catch (error: any) {
     console.error('Submission error:', error.message || error);
     return NextResponse.json({ message: 'Something went wrong.' }, { status: 500 });

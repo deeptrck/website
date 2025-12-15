@@ -2,9 +2,9 @@ import { Resend } from 'resend'
 
 export const runtime = 'nodejs'
 
-const resend = new Resend(process.env.RESEND_API_KEY || '')
-
 export async function GET(req: Request): Promise<Response> {
+  const resendApiKey = process.env.RESEND_API_KEY
+  const resend = resendApiKey ? new Resend(resendApiKey) : null
   const { searchParams } = new URL(req.url)
   const email = searchParams.get('email')
   const name = searchParams.get('name')
@@ -50,25 +50,29 @@ export async function GET(req: Request): Promise<Response> {
     const arrayBuffer = await fileRes.arrayBuffer()
     const base64Data = Buffer.from(arrayBuffer).toString('base64')
 
-    await resend.emails.send({
-      from: 'Document Access <onboarding@resend.dev>',
-      to: email,
-      subject: `📄 Your Requested Document: ${title}`,
-      html: `
-        <h2>Hi ${name},</h2>
-        <p>Attached is the <strong>${title}</strong> document you requested from deeptrack.</p>
-        <p>We look forward to hearing from you soon!</p>
-      `,
-      attachments: [
-        {
-          filename,
-          content: base64Data,
-          contentType,
-        },
-      ],
-    })
+    if (resend) {
+      await resend.emails.send({
+        from: 'Document Access <onboarding@resend.dev>',
+        to: email,
+        subject: `📄 Your Requested Document: ${title}`,
+        html: `
+          <h2>Hi ${name},</h2>
+          <p>Attached is the <strong>${title}</strong> document you requested from deeptrack.</p>
+          <p>We look forward to hearing from you soon!</p>
+        `,
+        attachments: [
+          {
+            filename,
+            content: base64Data,
+            contentType,
+          },
+        ],
+      })
+      return new Response('Document sent via email!', { status: 200 })
+    }
 
-    return new Response('Document sent via email!', { status: 200 })
+    console.warn('RESEND_API_KEY not configured — cannot send document email')
+    return new Response('Document prepared but email service not configured', { status: 200 })
   } catch (err) {
     console.error(err)
     return new Response('Error sending document.', { status: 500 })

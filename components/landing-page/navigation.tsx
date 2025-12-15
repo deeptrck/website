@@ -106,6 +106,9 @@ export function Navigation() {
                 <ListItem href="/audio-authentication" title="Audio Authentication">
                   Detect deepfakes and verify audio recordings with voice analysis technology.
                 </ListItem>
+                <ListItem href="/gotham" title="Gotham">
+                  Gotham Enterprise — media verification SaaS for enterprises. Verify media at scale with credit-based scans and detailed reports.
+                </ListItem>
                
               </ul>
             </NavigationMenuContent>

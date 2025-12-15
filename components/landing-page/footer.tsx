@@ -24,7 +24,9 @@ export default function Footer() {
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">
                 Disinformation
               </Link>
-              
+              <Link href="/gotham" className="text-gray-400 hover:text-white transition-colors">
+                Gotham
+              </Link>
             </nav>
           </div>
 
@@ -51,7 +53,7 @@ export default function Footer() {
               {/* <Link href="/company-and-culture" className="text-gray-400 hover:text-white transition-colors">
                 Company & Culture
               </Link> */}
-              <Link href="#" className="text-gray-400 hover:text-white transition-colors">
+              <Link href="/careers" className="text-gray-400 hover:text-white transition-colors">
                 Careers
               </Link>
               <Link href="#" className="text-gray-400 hover:text-white transition-colors">

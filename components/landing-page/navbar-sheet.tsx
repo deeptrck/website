@@ -67,6 +67,7 @@ export function NavbarSheet() {
                 <DropdownMenuSeparator />
                 <DropdownMenuItem><Link href='/image-authentication'>Image Authentication</Link></DropdownMenuItem>
                 <DropdownMenuItem><Link href='/audio-authentication'>Audio Authentication</Link></DropdownMenuItem>
+                <DropdownMenuItem><Link href='/gotham'>Gotham</Link></DropdownMenuItem>
                 
               </DropdownMenuContent>
             </DropdownMenu>

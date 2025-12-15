@@ -8,12 +8,16 @@ import * as Sentry from "@sentry/nextjs";
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
 
-const rd = new RealityDefender({
-  apiKey: process.env.REALITY_DEFENDER_API_KEY as string,
-});
-
 export async function POST(req: Request) {
   console.log("POST /api/check-media called");
+
+  const rdApiKey = process.env.REALITY_DEFENDER_API_KEY
+  if (!rdApiKey) {
+    console.error('Missing REALITY_DEFENDER_API_KEY')
+    return NextResponse.json({ error: 'Verification service not configured' }, { status: 500 })
+  }
+
+  const rd = new RealityDefender({ apiKey: rdApiKey })
 
   try {
     const contentType = req.headers.get("content-type") || "";

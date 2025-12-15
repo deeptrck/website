@@ -1,10 +1,16 @@
 import { Resend } from 'resend'
 import { NextRequest } from 'next/server'
 
-const resend = new Resend(process.env.RESEND_API_KEY as string)
-
 export async function POST(req: NextRequest) {
   try {
+    const resendApiKey = process.env.RESEND_API_KEY
+    if (!resendApiKey) {
+      console.error('Missing RESEND_API_KEY')
+      return Response.json({ error: 'Email service not configured' }, { status: 500 })
+    }
+
+    const resend = new Resend(resendApiKey)
+
     const { name, email, type }: { name: string; email: string; type: string } = await req.json()
     const trimmedTitle = type.slice(8)
 
