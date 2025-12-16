@@ -79,7 +79,7 @@ export function Navigation() {
   return (
     <>
       <NavigationMenu>
-        <NavigationMenuList className="space-x-10">
+        <NavigationMenuList className="space-x-6">
           {/* Solutions menu */}
           <NavigationMenuItem>
             <NavigationMenuTrigger className="bg-black text-white">Solutions</NavigationMenuTrigger>
@@ -151,6 +151,13 @@ export function Navigation() {
           <NavigationMenuItem>
             <NavigationMenuLink asChild>
               <Link href="#" className="bg-black text-white">Support</Link>
+            </NavigationMenuLink>
+          </NavigationMenuItem>
+
+          {/* Careers link */}
+          <NavigationMenuItem>
+            <NavigationMenuLink asChild>
+              <Link href="/careers" className="bg-black text-white">Careers</Link>
             </NavigationMenuLink>
           </NavigationMenuItem>
 

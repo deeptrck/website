@@ -90,6 +90,7 @@ export function NavbarSheet() {
             {/* Support and Blog */}
             <Link href='#'>Support</Link>
             <Link href='/events'>Blogs and Events</Link>
+            <Link href='/careers'>Careers</Link>
 
             {/* Investor Relations dropdown */}
             <DropdownMenu>

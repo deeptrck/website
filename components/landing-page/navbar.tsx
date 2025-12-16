@@ -24,6 +24,7 @@ export function Navbar() {
               <Navigation />
             </div>
           </div>
+          
           <div className="-mr-2 flex md:hidden">
             <NavbarSheet />
           </div>

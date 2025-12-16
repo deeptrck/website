@@ -14,14 +14,14 @@ export default function CareersPage() {
       <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4 z-0 min-h-[60vh]'>
         <div className='flex flex-col m-auto p-4'>
           <div className='p-4 space-y-4'>
-            <h1 className="text-6xl font-semibold">Join Our Team</h1>
+            <h1 className="text-6xl font-semibold">Careers at DeepTrack</h1>
             <p className="mt-4 text-lg leading-relaxed max-w-2xl">
-              Be part of the mission to detect deepfakes, combat misinformation, and ensure content authenticity worldwide.
+              One year in, our mission continues: we build tools to verify media and protect truth. We sometimes open roles as we scale — when we do, they appear here.
             </p>
             <div className="flex gap-4 mt-6">
               <Link
                 href="/"
-                className="bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition font-semibold"
+                className="bg-gray-200 text-slate-900 px-6 py-3 rounded-lg hover:bg-gray-300 transition font-semibold"
               >
                 Back to Home
               </Link>
@@ -30,11 +30,11 @@ export default function CareersPage() {
         </div>
         <div className='p-6 lg:mt-12 flex items-center justify-center'>
           <Image
-            src="/Vector.svg"
-            alt="Decorative Lines"
-            width={400}
-            height={300}
-            className="customTeal opacity-50"
+            src="/culture.jpg"
+            alt="Team Culture"
+            width={420}
+            height={320}
+            className="rounded-xl shadow-md"
           />
         </div>
       </section>
@@ -51,12 +51,16 @@ export default function CareersPage() {
             
             <div>
               <h2 className="text-4xl md:text-5xl font-semibold mb-4">
-                No Available Vacancies Right Now
+                We're Not Hiring Right Now
               </h2>
               
               <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
-                We're not currently hiring, but we're always interested in talented individuals passionate about AI, deepfake detection, and content authenticity.
+                It's been one year since we launched our mission. We currently have no open vacancies, but we're always happy to hear from passionate candidates. If you'd like to be considered for future roles, email us your CV and a short note about what you'd like to work on.
               </p>
+
+              <div className="mt-6">
+                <a href="mailto:careers@deeptrack.io" className="inline-block bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition font-semibold">Send your CV</a>
+              </div>
             </div>
           </div>
         </div>
