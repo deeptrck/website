@@ -28,13 +28,13 @@ const GothamPage = () => {
   return (
     <>
       <Head>
-        <title>Gotham Enterprise — Media Verification SaaS Platform | DeepTrack</title>
+        <title>Deeptrack Gotham  — Media Verification SaaS Platform | DeepTrack</title>
         <meta 
           name="description" 
-          content="Gotham Enterprise: A modern SaaS platform for large-scale media verification. Credit-based scanning, bulk processing, worker architecture, and comprehensive PDF reporting for enterprises." 
+          content="Deeptrack Gotham: A modern SaaS platform for large-scale media verification. Credit-based scanning, bulk processing, worker architecture, and comprehensive PDF reporting for enterprises." 
         />
-        <meta property="og:title" content="Gotham Enterprise — Enterprise Media Verification Platform" />
-        <meta property="og:description" content="Scale media authenticity verification with Gotham Enterprise — credit-based pricing, bulk scanning, and professional reporting." />
+        <meta property="og:title" content="Deeptrack Gotham — Enterprise Media Verification Platform" />
+        <meta property="og:description" content="Scale media authenticity verification with Deeptrack Gotham — credit-based pricing, bulk scanning, and professional reporting." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.deeptrack.io/gotham" />
       </Head>
@@ -46,7 +46,7 @@ const GothamPage = () => {
           <section data-aos="fade-in" className="grid lg:grid-cols-2 gap-6 max-w-7xl mx-auto mt-4 min-h-[50vh] p-4">
               <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left m-auto space-y-4">
                     <p className='font-semibold text-lg'>Solution:</p>
-                  <h1 className="text-4xl sm:text-5xl font-semibold">Gotham Enterprise</h1>
+                  <h1 className="text-4xl sm:text-5xl font-semibold">Deeptrack Gotham</h1>
                   <p className="text-lg leading-relaxed max-w-lg">
                       A modern SaaS platform for large-scale media verification. Credit-based scanning, bulk processing, worker-powered architecture, and professional reporting.
                   </p>
@@ -79,9 +79,9 @@ const GothamPage = () => {
           <FeatureHighlight
               title="Enterprise-Grade Media Verification at Scale"
               subtitle='Credit-Based SaaS with Background Processing'
-              description="Gotham Enterprise delivers a complete verification platform combining modern SaaS architecture with sophisticated media analysis. Users purchase credits that fuel unlimited scans, while a worker-based architecture ensures bulk operations process asynchronously without impacting performance. Reality Defender integration powers AI-driven authenticity detection, and comprehensive reporting transforms results into compliance documentation. From payment processing through Paystack to audit trail logging, every component is built for enterprise reliability and scalability."
+              description="Deeptrack Gotham, delivers a complete verification platform combining modern SaaS architecture with sophisticated media analysis. Users purchase credits that fuel unlimited scans, while a worker-based architecture ensures bulk operations process asynchronously without impacting performance. From payment processing  to audit trail logging, every component is built for enterprise reliability and scalability."
               imageSrc='/Vector.svg'
-              imageAlt='Gotham Enterprise Platform Architecture'
+              imageAlt='Deeptrack Gotham Platform Architecture'
           />
             <Image
                 src="/Vector.svg"
@@ -96,13 +96,7 @@ const GothamPage = () => {
               features={features} title={''} description={''}
           />
 
-          {/* Information Section */}
-          <InformationSection
-              subtitle='Production-Ready Technology Stack'
-              description="Gotham Enterprise combines Next.js full-stack capabilities, React's interactive UI, TypeScript safety, MongoDB persistence, and Clerk authentication to create a cohesive platform. The custom UI component library ensures consistency. Web workers enable background processing, while Paystack webhooks reliably handle payments. The modular architecture allows each system to scale independently — payment processing, verification workers, and API services operate as dedicated components."
-              imageSrc='/Vector.svg'
-              imageAlt='Gotham Enterprise Tech Stack'
-          />
+          
           
           <Image
               src="/Vector.svg"
@@ -116,7 +110,7 @@ const GothamPage = () => {
           <UseCaseFooterBanner
               title="Complete Media Verification Ecosystem"
               imageSrc='/Vector.svg'
-              imageAlt='Gotham Enterprise Complete Platform' 
+              imageAlt='Deeptrack Gotham Complete Platform' 
               content={[
                   {
                       subtitle: 'Seamless Monetization & User Experience',
@@ -133,14 +127,14 @@ const GothamPage = () => {
           <section className="py-16 px-4 text-center bg-gray-50">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-semibold mb-4">Ready to Scale Your Media Verification?</h2>
-              <p className="text-lg text-gray-700 mb-6">Gotham Enterprise powers organizations that need to verify media at scale with reliability, compliance, and ease of use.</p>
+              <p className="text-lg text-gray-700 mb-6">Deeptrack Gotham powers organizations that need to verify media at scale with reliability, compliance, and ease of use.</p>
               <a 
                 href="https://gotham.deeptrack.io" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-block bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition font-semibold"
               >
-                Launch Gotham Enterprise
+                Launch Deeptrack Gotham
               </a>
             </div>
           </section>

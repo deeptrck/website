@@ -16,7 +16,7 @@ export default function CareersPage() {
           <div className='p-4 space-y-4'>
             <h1 className="text-6xl font-semibold">Careers at DeepTrack</h1>
             <p className="mt-4 text-lg leading-relaxed max-w-2xl">
-              One year in, our mission continues: we build tools to verify media and protect truth. We sometimes open roles as we scale — when we do, they appear here.
+             Our mission continues: we build tools to verify media and protect truth. We sometimes open roles as we scale — when we do, they appear here.
             </p>
             <div className="flex gap-4 mt-6">
               <Link
@@ -55,7 +55,7 @@ export default function CareersPage() {
               </h2>
               
               <p className="text-lg text-gray-700 max-w-2xl mx-auto leading-relaxed">
-                It's been one year since we launched our mission. We currently have no open vacancies, but we're always happy to hear from passionate candidates. If you'd like to be considered for future roles, email us your CV and a short note about what you'd like to work on.
+                 We currently have no open vacancies, but we're always happy to hear from passionate candidates. If you'd like to be considered for future roles, email us your CV and a short note about what you'd like to work on.
               </p>
 
               <div className="mt-6">

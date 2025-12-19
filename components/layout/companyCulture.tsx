@@ -36,12 +36,12 @@ const leadership = [
     img: '/sammy.jpg',
     link: "https://www.linkedin.com/in/sammydeprez/",
   },
-  {
-    name: 'Njoki Kamau',
-    title: 'Principal Attorney, deeptrack',
-    img: '/kamau.jpg',
-    link: "https://www.linkedin.com/in/njoki-kamau-mbugua-98441775/",
-  },
+  // {
+  //   name: 'Njoki Kamau',
+  //   title: 'Principal Attorney, deeptrack',
+  //   img: '/kamau.jpg',
+  //   link: "https://www.linkedin.com/in/njoki-kamau-mbugua-98441775/",
+  // },
   {
     name: 'MauriceOyundi',
     title: 'Advisor, Enterprise Technology & Public Sector Solutions',
@@ -56,7 +56,7 @@ const leadership = [
   },
    {
     name: 'Brenda Gentry',
-    title: 'Advisor',
+    title: 'Marketing and Expansion ',
     img: '/brenda.jpg',
     link: "https://www.linkedin.com/in/brenda-gentry-4b56b087/"
   },
@@ -144,7 +144,7 @@ export default function CompanyCultureAndLeadership() {
             </p>
             
             <p className="text-lg text-gray-300 leading-relaxed">
-              Founded in 2024 in Kenya, we're Africa's first verification-focused AI company with a global mission to establish truth infrastructure across critical sectors.
+              Founded in 2024 , we're the first verification-focused AI company with a global mission to establish truth infrastructure across critical sectors.
             </p>
           </div>
         </div>
