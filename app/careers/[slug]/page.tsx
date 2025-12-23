@@ -21,3 +21,8 @@ export default function JobPage({ params }: Props) {
     </div>
   );
 }
+
+// Pre-render all known job pages at build time so they don't 404 in static deployments.
+export async function generateStaticParams() {
+  return jobs.map((j) => ({ slug: j.slug }));
+}
