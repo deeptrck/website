@@ -3,9 +3,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   /* config options here */
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+  // `eslint` option removed — Next.js 16+ no longer supports `eslint` in next.config.
   // Temporarily disable rewrites to test direct PostHog connection
   // async rewrites() {
   //   return [
