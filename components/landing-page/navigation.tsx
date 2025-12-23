@@ -154,12 +154,7 @@ export function Navigation() {
             </NavigationMenuLink>
           </NavigationMenuItem>
 
-          {/* Careers link */}
-          <NavigationMenuItem>
-            <NavigationMenuLink asChild>
-              <Link href="/careers" className="bg-black text-white">Careers</Link>
-            </NavigationMenuLink>
-          </NavigationMenuItem>
+          {/* Careers removed from header nav — kept in footer per request */}
 
           {/* Blog link */}
           <NavigationMenuItem>

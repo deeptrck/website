@@ -30,7 +30,8 @@ export async function POST(req: Request) {
 
     const buffer = Buffer.from(await cv.arrayBuffer());
 
-    const hrEmail = process.env.HR_EMAIL || 'careers@deeptrack.io';
+    // Default recipient for applications. Can be overridden with HR_EMAIL env var.
+    const hrEmail = process.env.HR_EMAIL || 'people@deeptrack.io';
 
     // Always attempt to notify the company HR email (falls back to careers@deeptrack.io).
     await sendHRNotification({

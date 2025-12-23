@@ -90,7 +90,7 @@ export function NavbarSheet() {
             {/* Support and Blog */}
             <Link href='#'>Support</Link>
             <Link href='/events'>Blogs and Events</Link>
-            <Link href='/careers'>Careers</Link>
+            {/* Careers removed from mobile menu — still available in footer */}
 
             {/* Investor Relations dropdown */}
             <DropdownMenu>
