@@ -14,7 +14,7 @@ const Events = () => {
   return (
     <>
       <Head>
-        <title>Executive Identity Shielding & CEO Deepfake Protection | DeepTrack</title>
+        <title>Executive Identity Shielding & CEO Deepfake Protection | deeptrack</title>
         <meta 
           name="description" 
           content="Protect executives from deepfake attacks with AI-powered identity shielding. Prevent CEO fraud, detect synthetic media threats, and secure corporate communications with enterprise-grade deepfake protection." 

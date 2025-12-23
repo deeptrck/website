@@ -8,7 +8,7 @@ const webinarData = [
     {
         title: 'Enhancing Fraud Prevention in the Age of AI',
         description:
-            'With the surge in synthetic meia and deepfake-driven fraud, ensuring robust KYC processes has never been more critical. This webinar will explore innovative approaches, share industry insights, and demonstrate how Deeptrack\'s AI solution safeguard digital transactions.',
+            'With the surge in synthetic meia and deepfake-driven fraud, ensuring robust KYC processes has never been more critical. This webinar will explore innovative approaches, share industry insights, and demonstrate how deeptrack\'s AI solution safeguard digital transactions.',
         image:'/webinar-q1.jpeg',
         link: '#'
     }

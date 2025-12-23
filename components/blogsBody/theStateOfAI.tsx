@@ -98,7 +98,7 @@ const TheStateOfAI: React.FC = () => {
 
       <ul className="list-disc ml-6 text-lg text-gray-300 space-y-4">
         <li>
-          <strong className="text-white">Use Deepfake Detection Tools:</strong> Platforms like DeepTrack analyze media inconsistencies to verify authenticity.
+          <strong className="text-white">Use Deepfake Detection Tools:</strong> Platforms like deeptrack analyze media inconsistencies to verify authenticity.
         </li>
         <li>
           <strong className="text-white">Employee Training:</strong> Conduct awareness programs on recognizing AI-based fraud and verifying communications.

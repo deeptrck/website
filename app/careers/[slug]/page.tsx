@@ -6,11 +6,13 @@ import { Navbar } from '@/components/landing-page/navbar';
 import Footer from '@/components/landing-page/footer';
 
 type Props = {
-  params: { slug: string };
+  // `params` may be a Promise in the Next.js app router; unwrap with `await`.
+  params: { slug: string } | Promise<{ slug: string }>;
 };
 
-export default function JobPage({ params }: Props) {
-  const job = jobs.find((j) => j.slug === params.slug);
+export default async function JobPage({ params }: Props) {
+  const { slug } = (await params) as { slug: string };
+  const job = jobs.find((j) => j.slug === slug);
   if (!job) return notFound();
 
   return (

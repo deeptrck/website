@@ -87,9 +87,9 @@ export const metadata: Metadata = {
     'real-time deepfake detection', 'deepfake detection API', 'cloud deepfake detection',
     'AI-generated video detection', 'deepfake detection system'
   ].join(', '),
-  authors: [{ name: 'DeepTrack' }],
-  creator: 'DeepTrack',
-  publisher: 'DeepTrack',
+  authors: [{ name: 'deeptrack' }],
+  creator: 'deeptrack',
+  publisher: 'deeptrack',
   formatDetection: {
     email: false,
     address: false,
@@ -118,7 +118,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://www.deeptrack.io',
-    siteName: 'DeepTrack',
+    siteName: 'deeptrack',
     title: 'deeptrack - AI Deepfake Detection & Content Verification Platform',
     description: 'Global enterprise deepfake detection software and AI-powered content verification tools for media, finance, and government sectors worldwide.',
     images: [
@@ -133,7 +133,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'DeepTrack - AI Deepfake Detection & Content Verification Platform',
+    title: 'deeptrack - AI Deepfake Detection & Content Verification Platform',
     description: 'Global enterprise deepfake detection software and AI-powered content verification tools',
     images: ['/deeptrackOG.png'],
     creator: '@deeptrack',
@@ -179,7 +179,7 @@ export default function RootLayout({
                 {
                   "@type": "Organization",
                   "@id": "https://www.deeptrack.io/#organization",
-                  "name": "DeepTrack",
+                  "name": "deeptrack",
                   "url": "https://www.deeptrack.io",
                   "logo": {
                     "@type": "ImageObject",
@@ -225,7 +225,7 @@ export default function RootLayout({
                   "@type": "WebSite",
                   "@id": "https://www.deeptrack.io/#website",
                   "url": "https://www.deeptrack.io",
-                  "name": "DeepTrack",
+                  "name": "deeptrack",
                   "description": "AI Deepfake Detection & Content Verification Platform",
                   "publisher": {
                     "@id": "https://www.deeptrack.io/#organization"
@@ -238,7 +238,7 @@ export default function RootLayout({
                 },
                 {
                   "@type": "SoftwareApplication",
-                  "name": "DeepTrack AI Deepfake Detection",
+                  "name": "deeptrack AI Deepfake Detection",
                   "applicationCategory": "BusinessApplication",
                   "operatingSystem": "Web",
                   "description": "Enterprise-grade AI deepfake detection and content verification platform",

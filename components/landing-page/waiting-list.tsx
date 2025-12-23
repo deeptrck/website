@@ -67,13 +67,13 @@ export function WaitlistButton({id}: WaitlistButtonProps) {
             </DialogTrigger>
             <DialogContent className="max-w-xl bg-white text-black">
               <DialogHeader>
-                <DialogTitle className='text-2xl font-bold mb-2'>Privacy Policy for Deeptrack Solution Demo Bookings</DialogTitle>
+                <DialogTitle className='text-2xl font-bold mb-2'>Privacy Policy for deeptrack Solution Demo Bookings</DialogTitle>
               </DialogHeader>
               <div className="overflow-y-auto max-h-96">
                 {/* Privacy Policy content */}
                 <h2 className='text-xl font-bold mb-2'>Introduction</h2>
                 <p className='mb-2'>
-                  Deeptrack Solution ("we," "our," "us") is committed to protecting
+                  deeptrack Solution ("we," "our," "us") is committed to protecting
                   the privacy and personal information of users ("you," "your")
                   who book a demo for our product. This Privacy Policy outlines how
                   we collect, use, and safeguard your information when you interact
@@ -153,7 +153,7 @@ export function WaitlistButton({id}: WaitlistButtonProps) {
                   If you have any questions or concerns about this Privacy Policy or how your information is handled, please contact us at:
                 </p>
                 <div className="mt-4">
-                  Deeptrack Solution<br/>
+                  deeptrack Solution<br/>
                     Email: info@deeptrack.io<br/>
                       Phone: +254-796414653<br/>
                       </div>

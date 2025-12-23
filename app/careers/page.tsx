@@ -15,7 +15,7 @@ export default function CareersPage() {
       <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4 z-0 min-h-[48vh]'>
         <div className='flex flex-col m-auto p-4'>
           <div className='p-4 space-y-4'>
-            <h1 className="text-5xl md:text-6xl font-semibold">Careers at DeepTrack</h1>
+            <h1 className="text-5xl md:text-6xl font-semibold">Careers at deeptrack</h1>
             <p className="mt-4 text-lg leading-relaxed max-w-2xl">
               Our mission continues: we build tools to verify media and protect truth. Browse open roles below and apply online.
             </p>

@@ -7,7 +7,7 @@ const TheGothamBlog: React.FC = () => {
   return (
     <div className="max-w-4xl mx-auto p-8 bg-black text-white rounded-lg shadow-lg font-outfit">
       <h1 className="text-4xl font-extrabold text-center mb-2 tracking-wide md:text-5xl">
-        Deeptrack Gotham: Defending Journalism in the Age of Deepfakes
+        deeptrack Gotham: Defending Journalism in the Age of Deepfakes
       </h1>
 
       <p className="text-sm md:text-lg text-gray-300 text-center mb-6 max-w-[705px] mx-auto text-[18px]">
@@ -25,7 +25,7 @@ const TheGothamBlog: React.FC = () => {
       <div className="w-full flex justify-center mb-6">
         <img
           src="/blogs/gotham.jpg" // Add an image in /public/blogs/
-          alt="Deeptrack Gotham Illustration"
+          alt="deeptrack Gotham Illustration"
           className="w-full h-[444px] object-cover shadow-md rounded-lg"
         />
       </div>
@@ -48,10 +48,10 @@ const TheGothamBlog: React.FC = () => {
       </p>
 
       <h2 className="font-semibold mt-8 mb-4 border-b border-gray-700 pb-2 text-3xl md:text-4xl">
-        Introducing Deeptrack Gotham
+        Introducing deeptrack Gotham
       </h2>
       <p className="text-gray-300 leading-loose text-justify text-base md:text-lg mb-6">
-        At Deeptrack, we built Gotham to empower journalists, editors, and fact-checkers with a powerful line of defense.
+        At deeptrack, we built Gotham to empower journalists, editors, and fact-checkers with a powerful line of defense.
         Gotham is our deepfake detection platform designed to fit seamlessly into newsroom workflows, helping identify
         manipulated media before it reaches the public.
       </p>

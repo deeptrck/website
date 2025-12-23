@@ -94,33 +94,59 @@ export default function ApplicationForm({ jobSlug, jobTitle }: Props) {
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">First name *</span>
-          <input value={firstName} onChange={(e) => setFirstName(e.target.value)} className="mt-1 border rounded px-3 py-2" />
+          <input
+            value={firstName}
+            onChange={(e) => setFirstName(e.target.value)}
+            className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+          />
         </label>
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">Last name *</span>
-          <input value={lastName} onChange={(e) => setLastName(e.target.value)} className="mt-1 border rounded px-3 py-2" />
+          <input
+            value={lastName}
+            onChange={(e) => setLastName(e.target.value)}
+            className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+          />
         </label>
       </div>
 
       <label className="flex flex-col">
         <span className="text-sm font-medium text-gray-700">Email *</span>
-        <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} className="mt-1 border rounded px-3 py-2" />
+        <input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+          className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+        />
       </label>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">Phone (optional)</span>
-          <input value={phone} onChange={(e) => setPhone(e.target.value)} className="mt-1 border rounded px-3 py-2" />
+          <input
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+          />
         </label>
         <label className="flex flex-col">
           <span className="text-sm font-medium text-gray-700">LinkedIn / Portfolio (optional)</span>
-          <input value={links} onChange={(e) => setLinks(e.target.value)} className="mt-1 border rounded px-3 py-2" />
+          <input
+            value={links}
+            onChange={(e) => setLinks(e.target.value)}
+            className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+          />
         </label>
       </div>
 
       <label className="flex flex-col">
         <span className="text-sm font-medium text-gray-700">Cover letter *</span>
-        <textarea value={cover} onChange={(e) => setCover(e.target.value)} rows={6} className="mt-1 border rounded px-3 py-2" />
+        <textarea
+          value={cover}
+          onChange={(e) => setCover(e.target.value)}
+          rows={6}
+          className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+        />
       </label>
 
       <label className="flex flex-col">
@@ -129,7 +155,7 @@ export default function ApplicationForm({ jobSlug, jobTitle }: Props) {
           type="file"
           accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document"
           onChange={(e) => setCvFile(e.target.files?.[0] || null)}
-          className="mt-2"
+          className="mt-2 text-gray-700 dark:text-gray-200"
         />
         <p className="text-xs text-gray-500 mt-1">Max size 5MB. PDF preferred.</p>
       </label>

@@ -1,7 +1,7 @@
 import { Testimonial } from "@/types";
 const testimonials: Testimonial[] = [
     {
-        text: "Every week, we receive fraudulent applications disguised as genuine. Without a solution like DeepTrack, it&apos;s becoming impossible to separate fact from fiction. We need tools to protect our clients and ourselves.",
+        text: "Every week, we receive fraudulent applications disguised as genuine. Without a solution like deeptrack, it&apos;s becoming impossible to separate fact from fiction. We need tools to protect our clients and ourselves.",
         imageUrl: "/testimonial-1.svg",
         name: "Benaiah",
         role: "CE0 - PAYD",

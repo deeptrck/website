@@ -19,7 +19,7 @@ const features = [
     },
     {
         title: 'Single Source of Truth',
-        description: 'Centralize all content verification efforts with DeepTrack\'s secure platform, featuring our advanced deepfake authentication system where every validated media piece is archived and accessible for transparency and accountability. This deepfake verification tool ensures complete media authenticity solutions for news organizations.'
+        description: 'Centralize all content verification efforts with deeptrack\'s secure platform, featuring our advanced deepfake authentication system where every validated media piece is archived and accessible for transparency and accountability. This deepfake verification tool ensures complete media authenticity solutions for news organizations.'
     }
 ]
 
@@ -27,7 +27,7 @@ const MediaUseCase = () => {
   return (
     <>
       <Head>
-        <title>Deepfake Detection Software & AI Content Verification for Media | DeepTrack</title>
+        <title>Deepfake Detection Software & AI Content Verification for Media | deeptrack</title>
         <meta 
           name="description" 
           content="Advanced deepfake detection AI and content verification tools for media professionals. Detect manipulated media, prevent misinformation, and ensure content credibility with our enterprise deepfake detection solution." 
@@ -54,7 +54,7 @@ const MediaUseCase = () => {
           <FeatureHighlight
               title="Enterprise Deepfake Detection for Media Security"
               subtitle='AI-Powered Deepfake Detection (Using C2PA)'
-              description="DeepTrack's advanced deepfake detection AI technology detects manipulated images, deepfake videos, and AI-generated text with precision, ensuring only authentic content is published. Our comprehensive deepfake detection solution serves as the ultimate deepfake verification tool for newsrooms, providing robust deepfake scam protection and deepfake authentication capabilities. From user-generated submissions to breaking news footage, our deepfake analysis tool guarantees content credibility at every stage."
+              description="deeptrack's advanced deepfake detection AI technology detects manipulated images, deepfake videos, and AI-generated text with precision, ensuring only authentic content is published. Our comprehensive deepfake detection solution serves as the ultimate deepfake verification tool for newsrooms, providing robust deepfake scam protection and deepfake authentication capabilities. From user-generated submissions to breaking news footage, our deepfake analysis tool guarantees content credibility at every stage."
               imageSrc='/deeptrack-media-usecase-highlight.svg'
               imageAlt='AI Deepfake Detector - Detect Deepfakes Online'
           />
@@ -84,7 +84,7 @@ const MediaUseCase = () => {
 
           <InformationSection
               subtitle='Real-Time Fact Checking & Deepfake Detection'
-              description="Instant Media Authentication & Deepfake Prevention - Monitor and validate media content in real time using DeepTrack's advanced deepfake detection AI. Our video deepfake detector and deepfake image detection capabilities ensure that false or misleading information never makes it to the audience. This deepfake monitoring solution provides essential deepfake protection for journalists and news verification technology for modern newsrooms."
+              description="Instant Media Authentication & Deepfake Prevention - Monitor and validate media content in real time using deeptrack's advanced deepfake detection AI. Our video deepfake detector and deepfake image detection capabilities ensure that false or misleading information never makes it to the audience. This deepfake monitoring solution provides essential deepfake protection for journalists and news verification technology for modern newsrooms."
               imageSrc='/deeptrack-usecase-info-section.svg'
               imageAlt='Deepfake Detection Software - AI Content Verification'
           />

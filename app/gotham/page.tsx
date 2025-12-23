@@ -28,13 +28,13 @@ const GothamPage = () => {
   return (
     <>
       <Head>
-        <title>Deeptrack Gotham  — Media Verification SaaS Platform | DeepTrack</title>
+        <title>deeptrack Gotham  — Media Verification SaaS Platform | deeptrack</title>
         <meta 
           name="description" 
-          content="Deeptrack Gotham: A modern SaaS platform for large-scale media verification. Credit-based scanning, bulk processing, worker architecture, and comprehensive PDF reporting for enterprises." 
+          content="deeptrack Gotham: A modern SaaS platform for large-scale media verification. Credit-based scanning, bulk processing, worker architecture, and comprehensive PDF reporting for enterprises." 
         />
-        <meta property="og:title" content="Deeptrack Gotham — Enterprise Media Verification Platform" />
-        <meta property="og:description" content="Scale media authenticity verification with Deeptrack Gotham — credit-based pricing, bulk scanning, and professional reporting." />
+        <meta property="og:title" content="deeptrack Gotham — Enterprise Media Verification Platform" />
+        <meta property="og:description" content="Scale media authenticity verification with deeptrack Gotham — credit-based pricing, bulk scanning, and professional reporting." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.deeptrack.io/gotham" />
       </Head>
@@ -46,7 +46,7 @@ const GothamPage = () => {
           <section data-aos="fade-in" className="grid lg:grid-cols-2 gap-6 max-w-7xl mx-auto mt-4 min-h-[50vh] p-4">
               <div className="flex flex-col justify-center items-center text-center lg:items-start lg:text-left m-auto space-y-4">
                     <p className='font-semibold text-lg'>Solution:</p>
-                  <h1 className="text-4xl sm:text-5xl font-semibold">Deeptrack Gotham</h1>
+                  <h1 className="text-4xl sm:text-5xl font-semibold">deeptrack Gotham</h1>
                   <p className="text-lg leading-relaxed max-w-lg">
                       A modern SaaS platform for large-scale media verification. Credit-based scanning, bulk processing, worker-powered architecture, and professional reporting.
                   </p>
@@ -79,9 +79,9 @@ const GothamPage = () => {
           <FeatureHighlight
               title="Enterprise-Grade Media Verification at Scale"
               subtitle='Credit-Based SaaS with Background Processing'
-              description="Deeptrack Gotham, delivers a complete verification platform combining modern SaaS architecture with sophisticated media analysis. Users purchase credits that fuel unlimited scans, while a worker-based architecture ensures bulk operations process asynchronously without impacting performance. From payment processing  to audit trail logging, every component is built for enterprise reliability and scalability."
+              description="deeptrack Gotham, delivers a complete verification platform combining modern SaaS architecture with sophisticated media analysis. Users purchase credits that fuel unlimited scans, while a worker-based architecture ensures bulk operations process asynchronously without impacting performance. From payment processing  to audit trail logging, every component is built for enterprise reliability and scalability."
               imageSrc='/Vector.svg'
-              imageAlt='Deeptrack Gotham Platform Architecture'
+              imageAlt='deeptrack Gotham Platform Architecture'
           />
             <Image
                 src="/Vector.svg"
@@ -110,7 +110,7 @@ const GothamPage = () => {
           <UseCaseFooterBanner
               title="Complete Media Verification Ecosystem"
               imageSrc='/Vector.svg'
-              imageAlt='Deeptrack Gotham Complete Platform' 
+              imageAlt='deeptrack Gotham Complete Platform' 
               content={[
                   {
                       subtitle: 'Seamless Monetization & User Experience',
@@ -127,14 +127,14 @@ const GothamPage = () => {
           <section className="py-16 px-4 text-center bg-gray-50">
             <div className="max-w-3xl mx-auto">
               <h2 className="text-3xl font-semibold mb-4">Ready to Scale Your Media Verification?</h2>
-              <p className="text-lg text-gray-700 mb-6">Deeptrack Gotham powers organizations that need to verify media at scale with reliability, compliance, and ease of use.</p>
+              <p className="text-lg text-gray-700 mb-6">deeptrack Gotham powers organizations that need to verify media at scale with reliability, compliance, and ease of use.</p>
               <a 
                 href="https://gotham.deeptrack.io" 
                 target="_blank" 
                 rel="noreferrer"
                 className="inline-block bg-sky-600 text-white px-6 py-3 rounded-lg hover:bg-sky-700 transition font-semibold"
               >
-                Launch Deeptrack Gotham
+                Launch deeptrack Gotham
               </a>
             </div>
           </section>

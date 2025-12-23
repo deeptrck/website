@@ -13,17 +13,17 @@ const Events = () => {
   return (
     <>
       <Head>
-        <title>Deepfake Detection Blog, Events & Industry Insights | DeepTrack</title>
+        <title>Deepfake Detection Blog, Events & Industry Insights | deeptrack</title>
         <meta 
           name="description" 
-          content="Stay updated with the latest deepfake detection insights, AI security trends, industry events, and thought leadership from DeepTrack experts worldwide." 
+          content="Stay updated with the latest deepfake detection insights, AI security trends, industry events, and thought leadership from deeptrack experts worldwide." 
         />
         <meta 
           name="keywords" 
           content="deepfake blog, AI security blog, deepfake detection news, synthetic media insights, AI fraud prevention blog, deepfake events, cybersecurity conferences, AI detection webinars, deepfake industry trends, media authenticity blog, content verification insights, AI security events, deepfake prevention tips, synthetic media news, AI detection technology updates, deepfake research, cybersecurity blog, digital forensics events, AI authentication trends, deepfake detection conferences, media security webinars, AI content verification blog, deepfake case studies, cybersecurity thought leadership, AI security insights"
         />
-        <meta property="og:title" content="Deepfake Detection Blog, Events & Industry Insights | DeepTrack" />
-        <meta property="og:description" content="Latest deepfake detection insights, AI security trends, and industry events from DeepTrack experts." />
+        <meta property="og:title" content="Deepfake Detection Blog, Events & Industry Insights | deeptrack" />
+        <meta property="og:description" content="Latest deepfake detection insights, AI security trends, and industry events from deeptrack experts." />
         <meta property="og:type" content="website" />
         <link rel="canonical" href="https://www.deeptrack.io/events" />
       </Head>
@@ -54,7 +54,7 @@ const Events = () => {
             <div className="w-full">
               <Image
                 src="/events/event1.jpg"
-                alt="DeepTrack AI Security Conference - Deepfake Detection & Prevention"
+                alt="deeptrack AI Security Conference - Deepfake Detection & Prevention"
                 width={600}
                 height={400}
                 className="rounded-xl shadow-lg w-full object-cover"
@@ -69,7 +69,7 @@ const Events = () => {
             <div className="w-full">
               <Image
                 src="/events/event2.jpg"
-                alt="DeepTrack Workshop - AI Content Verification & Media Authentication"
+                alt="deeptrack Workshop - AI Content Verification & Media Authentication"
                 width={600}
                 height={400}
                 className="rounded-xl shadow-lg w-full object-cover"
@@ -84,7 +84,7 @@ const Events = () => {
 
           {/* Additional Event Information */}
           <div className="mt-12 bg-gray-900 rounded-xl p-8">
-            <h3 className="text-2xl font-semibold mb-4 text-center">Why Attend DeepTrack Events?</h3>
+            <h3 className="text-2xl font-semibold mb-4 text-center">Why Attend deeptrack Events?</h3>
             <div className="grid md:grid-cols-3 gap-6 text-center">
               <div>
                 <h4 className="text-lg font-semibold mb-2 text-customTeal">Expert Insights</h4>

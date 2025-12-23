@@ -93,7 +93,7 @@ export const handleDownloadPDF = (result: VerificationResult) => {
   // --- Title ---
   doc.setFont("helvetica", "bold");
   doc.setFontSize(16);
-  doc.text("Deeptrack Gotham Media Verification Report", margin, y);
+  doc.text("deeptrack Gotham Media Verification Report", margin, y);
   y += 20;
 
   // --- File Information ---

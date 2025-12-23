@@ -17,7 +17,7 @@ const ImageAuthenticationPage = () => {
   return (
     <>
       <Head>
-        <title>AI Image Authentication & Deepfake Image Detection Software | DeepTrack</title>
+        <title>AI Image Authentication & Deepfake Image Detection Software | deeptrack</title>
         <meta 
           name="description" 
           content="Advanced AI image authentication and deepfake image detection software. Detect manipulated images, synthetic media, and AI-generated content with enterprise-grade accuracy for global businesses." 
@@ -41,7 +41,7 @@ const ImageAuthenticationPage = () => {
           imageSrc='/deeptrack-image-authentication.svg'
         />
         <StatsSection
-          description="Sophisticated AI-generated image forgeries are becoming increasingly accessible and widespread worldwide, posing significant risks across industries in the USA, Europe, Asia, and emerging markets. Deeptrack advanced multi-layer detection shields global organizations from deepfake-driven fraud, identity theft, and disinformation with enterprise-grade accuracy."
+          description="Sophisticated AI-generated image forgeries are becoming increasingly accessible and widespread worldwide, posing significant risks across industries in the USA, Europe, Asia, and emerging markets. deeptrack advanced multi-layer detection shields global organizations from deepfake-driven fraud, identity theft, and disinformation with enterprise-grade accuracy."
           statistics={[
             { value: '85%', description: 'of organizations globally are vulnerable to deepfake-enabled fraud across North America, Europe, and Asia-Pacific' },
            { value: '75%', description: 'of businesses worldwide face rising threats from manipulated images and misinformation' },
@@ -56,14 +56,14 @@ const ImageAuthenticationPage = () => {
         />
         <Banner
           banner={[
-            { icon: '/svg-icons/detection.svg', title: 'Advanced Global Detection', description: 'Deeptrack leverages cutting-edge AI to identify manipulations at the pixel level, uncover hidden inconsistencies, and provide unparalleled accuracy in detecting deepfake and synthetic media threats for businesses in the USA, Europe, Asia, and beyond.' },
-            { icon: '/svg-icons/protection.svg', title: 'International Fraud Protection', description: 'By exposing manipulated images, Deeptrack safeguards global enterprises from fraud, enhancing security across key sectors such as finance, media, and public administration in markets worldwide including Canada, Australia, and the UK.' },
-            { icon: '/svg-icons/injection.svg', title: 'Stop Global Injection Impersonations', description: 'Deeptrack enables reliable KYC verification and protects organizations against impersonation threats worldwide, helping to secure reputations, maintain trust, and prevent operational risks across international markets.' },
+            { icon: '/svg-icons/detection.svg', title: 'Advanced Global Detection', description: 'deeptrack leverages cutting-edge AI to identify manipulations at the pixel level, uncover hidden inconsistencies, and provide unparalleled accuracy in detecting deepfake and synthetic media threats for businesses in the USA, Europe, Asia, and beyond.' },
+            { icon: '/svg-icons/protection.svg', title: 'International Fraud Protection', description: 'By exposing manipulated images, deeptrack safeguards global enterprises from fraud, enhancing security across key sectors such as finance, media, and public administration in markets worldwide including Canada, Australia, and the UK.' },
+            { icon: '/svg-icons/injection.svg', title: 'Stop Global Injection Impersonations', description: 'deeptrack enables reliable KYC verification and protects organizations against impersonation threats worldwide, helping to secure reputations, maintain trust, and prevent operational risks across international markets.' },
             { icon: '/svg-icons/platform.svg', title: 'Global Platform Agnostic', description: 'Our solution can be integrated into any pre-existing workflow worldwide to help organizations comply with international regulatory standards, safeguard against disinformation, ensure accurate reporting, and maintain visual content integrity across all regions.' },
           ]}
         />
         <InfoSection
-          title="Global DeepTrack Image Authentication Solution"
+          title="Global deeptrack Image Authentication Solution"
           description="deeptrack™ image authentication leverages advanced multi-layer AI detection to analyze images with precision for businesses worldwide. Our technology identifies manipulations at the pixel level, detecting techniques such as GAN-based image synthesis, face swapping, and other forms of synthetic media across diverse global use cases. Every image scan delivers actionable insights, including the likelihood of manipulation, helping organizations in the USA, Europe, Asia, and Africa swiftly identify AI-generated alterations. The platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users globally in combating fraud and disinformation effectively. Designed to scale internationally, deeptrack™ supports everything from processing a few images to managing bulk operations, ensuring flexibility for global businesses of any size with easy access through an intuitive web interface or seamless integration into your workflows via API."
           imageSrc='/deeptrack-image-authentications.svg'
         />
@@ -96,7 +96,7 @@ const ImageAuthenticationPage = () => {
                 {/* Right column */}
                 <div className="flex flex-col space-y-8">
                   <p className="text-2xl text-gray-300 leading-relaxed">
-                    The DeepTrack AI application is not just a tool—it is a global fraud prevention and media authenticity command center serving businesses worldwide
+                    The deeptrack AI application is not just a tool—it is a global fraud prevention and media authenticity command center serving businesses worldwide
                   </p>
       
                   <div className="w-full max-w-md">

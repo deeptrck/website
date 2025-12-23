@@ -15,11 +15,11 @@ import Head from 'next/head';
 const features = [
     {
         title: 'Increased Efficiency in Fraud Detection',
-        description: 'Eliminate manual bottlenecks in KYC workflows with advanced deepfake fraud detection. DeepTrack automates document analysis and synthetic media fraud detection, significantly reducing onboarding times and allowing teams to focus on high-value security tasks while preventing deepfake wire fraud.'
+        description: 'Eliminate manual bottlenecks in KYC workflows with advanced deepfake fraud detection. deeptrack automates document analysis and synthetic media fraud detection, significantly reducing onboarding times and allowing teams to focus on high-value security tasks while preventing deepfake wire fraud.'
     },
     {
         title: 'Single Source of Truth for Financial Security',
-        description: 'Consolidate KYC verifications and deepfake scam prevention into one secure platform. DeepTrack provides a centralized repository for identity checks and business authenticity verification, ensuring compliance and minimizing redundancies in customer onboarding while protecting against deepfake corporate security threats.'
+        description: 'Consolidate KYC verifications and deepfake scam prevention into one secure platform. deeptrack provides a centralized repository for identity checks and business authenticity verification, ensuring compliance and minimizing redundancies in customer onboarding while protecting against deepfake corporate security threats.'
     }
 ]
 
@@ -27,7 +27,7 @@ const FinanceUseCase = () => {
   return (
     <>
       <Head>
-        <title>Deepfake Fraud Detection & AI KYC Verification for Finance | DeepTrack</title>
+        <title>Deepfake Fraud Detection & AI KYC Verification for Finance | deeptrack</title>
         <meta 
           name="description" 
           content="Enterprise deepfake fraud detection and AI-powered KYC verification for financial institutions. Prevent deepfake scams, detect synthetic media fraud, and secure financial transactions with advanced AI technology." 
@@ -54,7 +54,7 @@ const FinanceUseCase = () => {
           <FeatureHighlight
               title="Enterprise Deepfake Fraud Detection for Financial Security"
               subtitle='AI-Powered Synthetic Media Detection'
-              description="DeepTrack's advanced deepfake detection AI technology verifies identities with unparalleled precision by detecting forged documents, manipulated images, synthetic audio, and voice deepfake fraud in real time. From passports to bank statements, every KYC submission is analyzed at a granular level to ensure authenticity and prevent deepfake wire fraud. Our enterprise-grade deepfake detection in fintech provides comprehensive protection against evolving synthetic media threats."
+              description="deeptrack's advanced deepfake detection AI technology verifies identities with unparalleled precision by detecting forged documents, manipulated images, synthetic audio, and voice deepfake fraud in real time. From passports to bank statements, every KYC submission is analyzed at a granular level to ensure authenticity and prevent deepfake wire fraud. Our enterprise-grade deepfake detection in fintech provides comprehensive protection against evolving synthetic media threats."
               imageSrc='/deeptrackrevenue-feature-highlight.svg'
               imageAlt='AI Deepfake Fraud Detection for Financial Security'
           />
@@ -77,7 +77,7 @@ const FinanceUseCase = () => {
           <UseCaseDetailedInformation
               title='Real-Time Identity Verification with Deepfake Detection'
               subtitle='Instant Document and Audio Analysis for Fraud Prevention'
-              description="DeepTrack applies advanced AI models to validate customer-submitted documents and voice-based verifications instantly while detecting deepfake scams. Detecting fraudulent documents, mismatched audio, synthetic identities, and voice deepfake fraud in real time ensures a smooth and secure onboarding experience. Our corporate deepfake defense system provides continuous monitoring against emerging threats in the financial sector."
+              description="deeptrack applies advanced AI models to validate customer-submitted documents and voice-based verifications instantly while detecting deepfake scams. Detecting fraudulent documents, mismatched audio, synthetic identities, and voice deepfake fraud in real time ensures a smooth and secure onboarding experience. Our corporate deepfake defense system provides continuous monitoring against emerging threats in the financial sector."
           />
           
           <Image
@@ -94,11 +94,11 @@ const FinanceUseCase = () => {
               content={[
                   {
                       subtitle: 'AI eliminates tedious manual KYC checks while preventing deepfake email scams, ensuring',
-                      description: 'faster and more accurate compliance with regulatory requirements. DeepTrack monitors anomalies, detects synthetic media fraud, and provides clear audit trails for every customer submission, offering comprehensive business authenticity verification.',
+                      description: 'faster and more accurate compliance with regulatory requirements. deeptrack monitors anomalies, detects synthetic media fraud, and provides clear audit trails for every customer submission, offering comprehensive business authenticity verification.',
                   },
                   {
                       subtitle: 'Seamless Integration with KYC and Fraud Detection Systems',
-                      description: 'DeepTrack integrates effortlessly with existing CRM, KYC, and fraud detection tools, ensuring scalable identity verification and deepfake protection for financial institutions of all sizes. Our AI-powered enterprise security solutions are specifically designed for deepfake risk management in the finance sector.',
+                      description: 'deeptrack integrates effortlessly with existing CRM, KYC, and fraud detection tools, ensuring scalable identity verification and deepfake protection for financial institutions of all sizes. Our AI-powered enterprise security solutions are specifically designed for deepfake risk management in the finance sector.',
                   },
               ]}          
           />

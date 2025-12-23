@@ -16,7 +16,7 @@ const AudioAuthenticationPage = () => {
   return (
     <>
       <Head>
-        <title>AI Audio Authentication & Voice Deepfake Detection Software | DeepTrack</title>
+        <title>AI Audio Authentication & Voice Deepfake Detection Software | deeptrack</title>
         <meta 
           name="description" 
           content="Advanced AI audio authentication and voice deepfake detection for global enterprises. Detect synthetic voices, cloned audio, and AI-generated speech with enterprise-grade accuracy." 
@@ -40,7 +40,7 @@ const AudioAuthenticationPage = () => {
           imageSrc="/deeptrack-audio-authentication.svg"
         />
         <StatsSection
-          description="Sophisticated AI-generated voice forgeries are rapidly advancing worldwide, creating new vulnerabilities for global businesses and individuals alike. Deeptrack cutting-edge voice authentication technology detects synthetic voice patterns across multiple languages and accents, protecting against identity theft, fraud, and impersonation-driven disinformation in markets from North America to Europe and Asia."
+          description="Sophisticated AI-generated voice forgeries are rapidly advancing worldwide, creating new vulnerabilities for global businesses and individuals alike. deeptrack cutting-edge voice authentication technology detects synthetic voice patterns across multiple languages and accents, protecting against identity theft, fraud, and impersonation-driven disinformation in markets from North America to Europe and Asia."
           statistics={[
             { value: '90%', description: 'of CEOs globally cannot distinguish cloned voices across different languages and accents' },
             { value: '85%', description: 'of fraudulent call attempts worldwide use cloned voices targeting businesses in the USA, Europe, and emerging markets' },
@@ -78,8 +78,8 @@ const AudioAuthenticationPage = () => {
           ]}
         />
         <InfoSection
-          title="Global DeepTrack Audio Authentication Solution"
-          description="Deeptrack audio authentication leverages advanced multi-layer AI detection to analyze audio with precision for global enterprises. Our technology identifies manipulations at the spectral level, detecting techniques such as GAN-based audio synthesis, voice cloning, and other forms of synthetic media across diverse languages and accents. Every audio scan delivers actionable insights, including the likelihood of manipulation, helping organizations worldwide swiftly identify AI-generated alterations. Deeptrack platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users globally in combating voice fraud and disinformation effectively. Designed to scale internationally, Deeptrack supports everything from processing individual audio files to managing billions of verifications, ensuring flexibility for global businesses of any size. Access our solution through an intuitive web interface or seamlessly integrate it into your international workflows via API."
+          title="Global deeptrack Audio Authentication Solution"
+          description="deeptrack audio authentication leverages advanced multi-layer AI detection to analyze audio with precision for global enterprises. Our technology identifies manipulations at the spectral level, detecting techniques such as GAN-based audio synthesis, voice cloning, and other forms of synthetic media across diverse languages and accents. Every audio scan delivers actionable insights, including the likelihood of manipulation, helping organizations worldwide swiftly identify AI-generated alterations. deeptrack platform also employs explainable AI, offering clear visualizations and detailed feedback to empower users globally in combating voice fraud and disinformation effectively. Designed to scale internationally, deeptrack supports everything from processing individual audio files to managing billions of verifications, ensuring flexibility for global businesses of any size. Access our solution through an intuitive web interface or seamlessly integrate it into your international workflows via API."
           imageSrc="/deeptrack-audio-authentications.svg"
         />
         <div>
@@ -110,7 +110,7 @@ const AudioAuthenticationPage = () => {
                 {/* Right column */}
                 <div className="flex flex-col space-y-8">
                   <p className="text-2xl text-gray-300 leading-relaxed">
-                    The DeepTrack AI application is not just a tool—it is a global fraud prevention and audio authenticity command center serving businesses worldwide
+                    The deeptrack AI application is not just a tool—it is a global fraud prevention and audio authenticity command center serving businesses worldwide
                   </p>
       
                   <div className="w-full max-w-md">

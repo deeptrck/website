@@ -31,7 +31,7 @@ export const features: Feature[] = [
     },
     {
   id: '2',
-  title: 'Deeptrack Gotham: Defending Journalism in the Age of Deepfakes',
+  title: 'deeptrack Gotham: Defending Journalism in the Age of Deepfakes',
   description:
     'Deepfakes are reshaping how misinformation spreads. Gotham empowers journalists to defend truth in the digital era.',
   image: '/blogs/gotham.jpg', // Add an image in /public/blogs/

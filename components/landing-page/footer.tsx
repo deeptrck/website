@@ -67,7 +67,7 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-6">Privacy & Compliance</h3>
             <nav className="flex flex-col space-y-4">
               <Link href="https://app.eu.vanta.com/deeptrack.io/trust/ykzpe8x33wwv9mki8rjv61" className="text-gray-400 hover:text-white transition-colors">
-                Deeptrack's Trust Center
+                deeptrack's Trust Center
               </Link>
           
             

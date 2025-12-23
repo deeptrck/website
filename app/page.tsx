@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: 'https:deeptrack.io/api/og?title=Deeptrack',
+        url: 'https:deeptrack.io/api/og?title=deeptrack',
         width: 1200,
         height: 630,
         alt: 'deeptrack'

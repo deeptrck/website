@@ -135,7 +135,7 @@ export default function TractionSection() {
               </thead>
               <tbody>
                 <tr className="border-t border-gray-800">
-                  <td className="px-4 py-2">Launch Deeptrack Foundry v1.0</td>
+                  <td className="px-4 py-2">Launch deeptrack Foundry v1.0</td>
                   <td className="px-4 py-2">Media scoring engine, dashboard, insurer API</td>
                   <td className="px-4 py-2">Product & Insurance Lead</td>
                   <td className="px-4 py-2">Q3 2025</td>
@@ -159,7 +159,7 @@ export default function TractionSection() {
                   <td className="px-4 py-2">Q4 2025</td>
                 </tr>
                 <tr className="border-t border-gray-800">
-                  <td className="px-4 py-2">Release Deeptrack Mirror</td>
+                  <td className="px-4 py-2">Release deeptrack Mirror</td>
                   <td className="px-4 py-2">Alert system, takedown, impersonation log</td>
                   <td className="px-4 py-2">Brian + CISO Advisory</td>
                   <td className="px-4 py-2">Q1 2026</td>
@@ -178,7 +178,7 @@ export default function TractionSection() {
         {/* Closing Notes */}
         <div className="pt-12 text-center">
           <p className="text-gray-400 max-w-3xl mx-auto">
-            We are grateful for your presence and expertise on this board. Your insight will guide Deeptrack through critical product, legal, and market expansion phases as we become a leading force in content and identity verification.
+            We are grateful for your presence and expertise on this board. Your insight will guide deeptrack through critical product, legal, and market expansion phases as we become a leading force in content and identity verification.
           </p>
           <p className="mt-4 text-gray-400">
             We look forward to your ideas and engagement across calls, working groups, and shared documentation.

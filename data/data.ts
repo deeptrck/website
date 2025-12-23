@@ -5,7 +5,7 @@ export const stepsData: IUserStep[] = [
     id: 1,
     image: "/svg-icons/monitor.svg",
     title: "Upload and Analyze Media",
-    paragraph: "Effortlessly verify images, videos, and audio in seconds. Drag, drop, and let Deeptrack do the rest"
+    paragraph: "Effortlessly verify images, videos, and audio in seconds. Drag, drop, and let deeptrack do the rest"
   },
   {
     id: 2,
@@ -41,6 +41,6 @@ export const stepsData: IUserStep[] = [
     id: 7,
     image: "/svg-icons/integration.svg",
     title: "Integration Management",
-    paragraph: "Easily connect Deeptrack with your workflows using APIs keys and customizable integrations"
+    paragraph: "Easily connect deeptrack with your workflows using APIs keys and customizable integrations"
   }
 ];

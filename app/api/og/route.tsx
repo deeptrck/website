@@ -6,7 +6,7 @@ export async function GET(request: Request) {
     try{
         const {searchParams} = new URL(request.url)
         const hasTitle = searchParams.has('title')
-        const title = hasTitle ? searchParams.get('title')?.slice(0,100): 'DeepTrack'
+        const title = hasTitle ? searchParams.get('title')?.slice(0,100): 'deeptrack'
         // const fontData = await fetch(new URL("../fonts/GeistMonoVF.woff", import.meta.url)).then((res) => res.arrayBuffer())
         return new ImageResponse(
             (

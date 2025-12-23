@@ -13,16 +13,16 @@ import Head from 'next/head';
 const features = [
   {
     title: 'Increased Efficiency in Election Security',
-    description: 'Streamline the verification of voter data, election materials, and digital records with AI tools for national security. DeepTrack reduces response times and helps electoral bodies focus resources on maintaining fair and transparent elections while combatting deepfakes in politics.'
+    description: 'Streamline the verification of voter data, election materials, and digital records with AI tools for national security. deeptrack reduces response times and helps electoral bodies focus resources on maintaining fair and transparent elections while combatting deepfakes in politics.'
   },
   {
     title: 'Single Source of Truth for Democratic Integrity',
-    description: 'DeepTrack centralizes election data and deepfake threat insights into a single platform, enabling secure monitoring and cohesive decision-making across election committees and regulatory bodies. Our government synthetic media defense ensures election integrity deepfake detection at scale.'
+    description: 'deeptrack centralizes election data and deepfake threat insights into a single platform, enabling secure monitoring and cohesive decision-making across election committees and regulatory bodies. Our government synthetic media defense ensures election integrity deepfake detection at scale.'
   },
   {
     title: 'Real-Time Election Monitoring & Deepfake Detection',
     subtitle: 'Dynamic Election Oversight:',
-    description: 'Deploy AI models to monitor voter data and election processes in real time with advanced deepfake detection for governments. DeepTrack detects inconsistencies like duplicate votes, suspicious ballot submissions, tampered election media, and political deepfakes, enabling immediate action to prevent fraud and protect democratic processes.'
+    description: 'Deploy AI models to monitor voter data and election processes in real time with advanced deepfake detection for governments. deeptrack detects inconsistencies like duplicate votes, suspicious ballot submissions, tampered election media, and political deepfakes, enabling immediate action to prevent fraud and protect democratic processes.'
   }
 ]
 
@@ -30,7 +30,7 @@ const GovernmentUseCase = () => {
   return (
     <>
       <Head>
-        <title>Deepfake Detection for Government & Election Security | DeepTrack</title>
+        <title>Deepfake Detection for Government & Election Security | deeptrack</title>
         <meta 
           name="description" 
           content="AI-powered deepfake detection for governments, election integrity protection, and national security. Combat political misinformation, detect synthetic media threats, and safeguard democratic processes with advanced AI tools." 
@@ -57,7 +57,7 @@ const GovernmentUseCase = () => {
         <FeatureHighlight
           title="Combatting Electoral Fraud & Political Deepfakes with AI Precision"
           subtitle='AI National Security Solutions'
-          description="DeepTrack's AI-powered deepfake detection ensures accuracy in identifying forged voter registrations, tampered ballot images, manipulated voting results, and political misinformation. By analyzing data patterns and media submissions, DeepTrack eliminates human error in fraud detection while providing comprehensive deepfake counterintelligence for government agencies. Our AI election security solutions detect and prevent deepfake threats to democracy in real-time."
+          description="deeptrack's AI-powered deepfake detection ensures accuracy in identifying forged voter registrations, tampered ballot images, manipulated voting results, and political misinformation. By analyzing data patterns and media submissions, deeptrack eliminates human error in fraud detection while providing comprehensive deepfake counterintelligence for government agencies. Our AI election security solutions detect and prevent deepfake threats to democracy in real-time."
           imageSrc='/deeptrack-use-case.svg'
           imageAlt='Government Deepfake Detection for Election Security'
         />
@@ -86,7 +86,7 @@ const GovernmentUseCase = () => {
             },
             {
               subtitle: 'Seamless Integration with Government Election Systems',
-              description: 'DeepTrack integrates effortlessly with voter databases, digital ballot systems, and other electoral platforms to ensure scalable deepfake detection for law enforcement and secure workflows during elections. Our government synthetic media defense solutions provide comprehensive protection against evolving threats to public sector security.',
+              description: 'deeptrack integrates effortlessly with voter databases, digital ballot systems, and other electoral platforms to ensure scalable deepfake detection for law enforcement and secure workflows during elections. Our government synthetic media defense solutions provide comprehensive protection against evolving threats to public sector security.',
             },
           ]}
           imageSrc='/deeptrack-reporting.svg'

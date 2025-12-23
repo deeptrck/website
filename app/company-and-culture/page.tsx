@@ -8,8 +8,8 @@ export default function CompanyCulturePage() {
   return (
     <>
       <Head>
-        <title>Company & Culture | DeepTrack</title>
-        <meta name="description" content="Learn about DeepTrack's mission, vision, product stack and leadership team." />
+        <title>Company & Culture | deeptrack</title>
+        <meta name="description" content="Learn about deeptrack's mission, vision, product stack and leadership team." />
         <link rel="canonical" href="https://www.deeptrack.io/company-and-culture" />
       </Head>
 

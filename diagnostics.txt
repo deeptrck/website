@@ -22,7 +22,7 @@ Type error: Type '{ title: string; subtitle: string; description: string; image:
   Property 'image' does not exist on type 'IntrinsicAttributes & UseCaseDetailedInformationProps'.
 
 [0m [90m 65 |[39m           subtitle[33m=[39m[32m"Real-time multimodal verification for claims, onboarding and underwriting"[39m[0m
-[0m [90m 66 |[39m           description[33m=[39m[32m"Prevent fraudulent payouts caused by deepfakes, synthetic identities and manipulated documents. DeepTrack integrates into claims pipelines via API or dashboard, providing instant authenticity reports and confidence scores."[39m[0m
+[0m [90m 66 |[39m           description[33m=[39m[32m"Prevent fraudulent payouts caused by deepfakes, synthetic identities and manipulated documents. deeptrack integrates into claims pipelines via API or dashboard, providing instant authenticity reports and confidence scores."[39m[0m
 [0m[31m[1m>[22m[39m[90m 67 |[39m           image[33m=[39m[32m"/images/insurance/insurance1.jpg"[39m[0m
 [0m [90m    |[39m           [31m[1m^[22m[39m[0m
 [0m [90m 68 |[39m           imageAlt[33m=[39m[32m"Example of insurance claims verification interface"[39m[0m
