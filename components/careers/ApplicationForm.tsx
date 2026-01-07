@@ -12,6 +12,7 @@ export default function ApplicationForm({ jobSlug, jobTitle }: Props) {
   const [email, setEmail] = useState('');
   const [phone, setPhone] = useState('');
   const [links, setLinks] = useState('');
+  const [github, setGithub] = useState('');
   const [cover, setCover] = useState('');
   const [cvFile, setCvFile] = useState<File | null>(null);
   const [loading, setLoading] = useState(false);
@@ -61,6 +62,7 @@ export default function ApplicationForm({ jobSlug, jobTitle }: Props) {
       fd.append('email', email);
       if (phone) fd.append('phone', phone);
       if (links) fd.append('links', links);
+      if (github) fd.append('github', github);
       fd.append('cover', cover);
       if (cvFile) fd.append('cv', cvFile);
 
@@ -80,6 +82,7 @@ export default function ApplicationForm({ jobSlug, jobTitle }: Props) {
       setEmail('');
       setPhone('');
       setLinks('');
+      setGithub('');
       setCover('');
       setCvFile(null);
     } catch (err: any) {
@@ -109,6 +112,16 @@ export default function ApplicationForm({ jobSlug, jobTitle }: Props) {
           />
         </label>
       </div>
+
+      <label className="flex flex-col">
+        <span className="text-sm font-medium text-gray-700">GitHub (optional)</span>
+        <input
+          value={github}
+          onChange={(e) => setGithub(e.target.value)}
+          placeholder="https://github.com/your-username"
+          className="mt-1 border rounded px-3 py-2 bg-white text-gray-900 placeholder-gray-400 dark:bg-gray-800 dark:text-gray-100 focus:outline-none focus:ring-2 focus:ring-sky-500"
+        />
+      </label>
 
       <label className="flex flex-col">
         <span className="text-sm font-medium text-gray-700">Email *</span>

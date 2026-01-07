@@ -1,4 +1,6 @@
 import { sendHRNotification, sendApplicantConfirmation } from '@/lib/email';
+import fs from 'fs';
+import path from 'path';
 
 function safeText(s: any) {
   return String(s || '').replace(/</g, '&lt;').replace(/>/g, '&gt;');
@@ -15,6 +17,7 @@ export async function POST(req: Request) {
     const email = form.get('email')?.toString() || '';
     const phone = form.get('phone')?.toString() || '';
     const links = form.get('links')?.toString() || '';
+    const github = form.get('github')?.toString() || '';
     const cover = form.get('cover')?.toString() || '';
     const cv = form.get('cv') as File | null;
 
@@ -31,28 +34,63 @@ export async function POST(req: Request) {
     const buffer = Buffer.from(await cv.arrayBuffer());
 
     // Default recipient for applications. Can be overridden with HR_EMAIL env var.
+    // Reverted to company HR email for production/testing.
     const hrEmail = process.env.HR_EMAIL || 'people@deeptrack.io';
 
-    // Always attempt to notify the company HR email (falls back to careers@deeptrack.io).
-    await sendHRNotification({
-      hrEmail,
-      jobTitle,
-      jobSlug,
-      firstName,
-      lastName,
-      email,
-      phone,
-      links,
-      cover,
-      cv: { filename: cv.name || 'cv', content: buffer, contentType: cv.type },
+    // Log received application details (sanitized) for debugging.
+    console.log('Received application', {
+      jobSlug: safeText(jobSlug),
+      jobTitle: safeText(jobTitle),
+      applicant: `${safeText(firstName)} ${safeText(lastName)}`,
+      email: safeText(email),
+      phone: safeText(phone),
+      links: safeText(links),
+      github: safeText(github),
+      cvName: cv?.name || null,
+      cvSize: cv ? cv.size : null,
     });
 
+    // Save CV to public/uploads so Apps Script can access it (note: ephemeral on some hosts)
+    let cvUrl: string | null = null;
     try {
-      await sendApplicantConfirmation({ to: email, firstName, jobTitle });
+      const uploadsDir = path.join(process.cwd(), 'public', 'files', 'uploads');
+      if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir, { recursive: true });
+      const safeName = `${Date.now()}-${cv.name.replace(/[^a-zA-Z0-9._-]/g, '-')}`;
+      const outPath = path.join(uploadsDir, safeName);
+      fs.writeFileSync(outPath, buffer);
+      const base = process.env.BASE_URL || process.env.NEXT_PUBLIC_BASE_URL || 'http://localhost:3000';
+      cvUrl = `${base.replace(/\/$/, '')}/files/uploads/${safeName}`;
+      console.log('Saved CV to', outPath, 'cvUrl=', cvUrl);
     } catch (e) {
-      // If applicant email fails (no SMTP), just log and continue — don't fail the submission
-      // eslint-disable-next-line no-console
-      console.warn('Applicant confirmation skipped/failed', e);
+      console.error('Failed to save CV to disk', e);
+    }
+
+    // POST to Apps Script webhook (sheet + email) and rely on it for notifications
+    try {
+      const appsUrl = process.env.APPS_SCRIPT_URL;
+      if (!appsUrl) {
+        console.warn('APPS_SCRIPT_URL not configured — skipping Apps Script POST');
+      } else {
+        const res = await fetch(appsUrl, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            jobSlug,
+            jobTitle,
+            firstName,
+            lastName,
+            email,
+            phone,
+            links,
+            github,
+            cover,
+            cvUrl,
+          }),
+        });
+        console.log('Posted application to Apps Script', appsUrl, 'status', res.status);
+      }
+    } catch (e) {
+      console.error('Failed to POST to Apps Script', e);
     }
 
     return new Response(JSON.stringify({ ok: true }), { status: 200 });

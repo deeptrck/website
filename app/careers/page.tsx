@@ -5,6 +5,7 @@ import Footer from '@/components/landing-page/footer';
 import Image from 'next/image';
 import Link from 'next/link';
 import JobList from '@/components/careers/JobList';
+import { jobs } from '@/data/jobs';
 
 export default function CareersPage() {
   return (
@@ -12,9 +13,9 @@ export default function CareersPage() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className='grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4 z-0 min-h-[48vh]'>
-        <div className='flex flex-col m-auto p-4'>
-          <div className='p-4 space-y-4'>
+      <section className="grid lg:grid-cols-2 sm:grid-col-1 max-w-7xl m-auto mt-4 z-0 min-h-[48vh]">
+        <div className="flex flex-col m-auto p-4">
+          <div className="p-4 space-y-4">
             <h1 className="text-5xl md:text-6xl font-semibold">Careers at deeptrack</h1>
             <p className="mt-4 text-lg leading-relaxed max-w-2xl">
               Our mission continues: we build tools to verify media and protect truth. Browse open roles below and apply online.
@@ -29,7 +30,7 @@ export default function CareersPage() {
             </div>
           </div>
         </div>
-        <div className='p-6 lg:mt-12 flex items-center justify-center'>
+        <div className="p-6 lg:mt-12 flex items-center justify-center">
           <Image
             src="/culture.jpg"
             alt="Team Culture"
@@ -39,6 +40,33 @@ export default function CareersPage() {
           />
         </div>
       </section>
+
+      {/* Featured internship banner */}
+      {(() => {
+        const featured = jobs.find((j) => j.slug === 'deepfakes-synthetic-media-research-intern');
+        if (!featured) return null;
+        return (
+          <section className="max-w-7xl mx-auto px-4">
+            <div className="bg-sky-900 text-white rounded-lg p-6 flex flex-col md:flex-row items-center gap-6 shadow-md">
+              <div className="flex-1">
+                <h3 className="text-2xl font-semibold">Media Research Intern</h3>
+                <p className="text-sky-200 mt-2">{featured.title} — {featured.summary}</p>
+                <div className="mt-4 flex gap-3">
+                  <Link href={`/careers/${featured.slug}`} className="bg-white text-sky-900 px-4 py-2 rounded hover:opacity-95">View role</Link>
+                  {featured.docUrl && (
+                    <a href={featured.docUrl} download className="border border-white px-4 py-2 rounded text-sm text-white hover:bg-white/10">
+                      Download JD
+                    </a>
+                  )}
+                </div>
+              </div>
+              <div className="w-40 h-40 rounded-lg flex items-center justify-center overflow-hidden">
+                <Image src="/culture.jpg" alt="Internship" width={160} height={160} className="object-cover" />
+              </div>
+            </div>
+          </section>
+        );
+      })()}
 
       <JobList />
 

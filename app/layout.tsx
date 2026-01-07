@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     default: 'deeptrack - AI Deepfake Detection & Content Verification Platform',
     template: '%s | deeptrack AI Deepfake Detection'
   },
-  description: 'Enterprise deepfake detection software and AI-powered content verification tools for global businesses. Detect manipulated media, prevent misinformation, and ensure content credibility worldwide.',
+  description: 'Deepfakes detection company for finance, media, insurance and government.',
   keywords: [
     // Core Deepfake Detection (20)
     'deepfake detection', 'deepfake detector', 'deepfake detection software', 'deepfake identification tool',

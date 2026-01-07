@@ -25,24 +25,38 @@ function createTransporter() {
 }
 
 export async function sendMail(opts: { to: string; subject: string; html: string; attachments?: Attachment[] }) {
-  const transporter = createTransporter();
-  const from = process.env.SMTP_FROM || process.env.SMTP_USER || 'no-reply@example.com';
+  let transporter = createTransporter();
+  let from = process.env.SMTP_FROM || process.env.SMTP_USER || 'no-reply@example.com';
 
+  // If SMTP not configured, create an Ethereal test account transporter so emails can be previewed
   if (!transporter) {
-    // Development fallback: log the email instead of sending
-    // This allows local testing without SMTP configured.
     // eslint-disable-next-line no-console
-    console.warn('SMTP not configured — skipping real send. Mail preview: ', { to: opts.to, subject: opts.subject });
-    return;
+    console.warn('SMTP not configured — creating Ethereal test account for preview.');
+    const testAccount = await nodemailer.createTestAccount();
+    transporter = nodemailer.createTransport({
+      host: testAccount.smtp.host,
+      port: testAccount.smtp.port,
+      secure: testAccount.smtp.secure,
+      auth: { user: testAccount.user, pass: testAccount.pass },
+    });
+    from = `no-reply@${testAccount.user}`;
   }
 
-  await transporter.sendMail({
+  const info = await transporter.sendMail({
     from,
     to: opts.to,
     subject: opts.subject,
     html: opts.html,
     attachments: opts.attachments?.map((a) => ({ filename: a.filename, content: a.content, contentType: a.contentType })),
   });
+
+  // Log send success and preview URL for Ethereal accounts
+  // eslint-disable-next-line no-console
+  console.log('Mail sent', { to: opts.to, subject: opts.subject, messageId: info.messageId });
+  if ((info as any).previewURL || nodemailer.getTestMessageUrl(info)) {
+    // eslint-disable-next-line no-console
+    console.log('Preview URL:', nodemailer.getTestMessageUrl(info));
+  }
 }
 
 export function hrNotificationHtml({ jobTitle, jobSlug, firstName, lastName, email, phone, links, cover }: any) {
@@ -53,6 +67,7 @@ export function hrNotificationHtml({ jobTitle, jobSlug, firstName, lastName, ema
       <p><strong>Email:</strong> ${safeText(email)}</p>
       <p><strong>Phone:</strong> ${safeText(phone)}</p>
       <p><strong>Links:</strong> ${safeText(links)}</p>
+      <p><strong>GitHub:</strong> ${safeText((arguments[0] && arguments[0].github) || '')}</p>
       <h3>Cover letter</h3>
       <div style="white-space:pre-wrap;border:1px solid #eee;padding:12px">${safeText(cover)}</div>
       <p style="font-size:12px;color:#666">Role: ${safeText(jobTitle)} (${safeText(jobSlug)})</p>
@@ -81,6 +96,7 @@ export async function sendHRNotification(params: {
   email: string;
   phone?: string;
   links?: string;
+  github?: string;
   cover: string;
   cv?: Attachment;
 }) {

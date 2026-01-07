@@ -1,0 +1,57 @@
+// Google Apps Script: doPost to receive job applications and save to Sheet + email
+// Create a new Apps Script project at https://script.google.com/, paste this code, deploy as Web App
+
+function doPost(e) {
+  try {
+    var data = {};
+    if (e.postData && e.postData.contents) {
+      data = JSON.parse(e.postData.contents);
+    }
+
+    var sheetId = 'YOUR_SHEET_ID_HERE'; // replace
+    var ss = SpreadsheetApp.openById(sheetId);
+    var sheet = ss.getSheetByName('Responses');
+    if (!sheet) {
+      sheet = ss.insertSheet('Responses');
+      sheet.appendRow(['Timestamp','Job Slug','Job Title','First name','Last name','Email','Phone','Links','GitHub','CV URL','Cover']);
+    }
+
+    sheet.appendRow([
+      new Date(),
+      data.jobSlug || '',
+      data.jobTitle || '',
+      data.firstName || '',
+      data.lastName || '',
+      data.email || '',
+      data.phone || '',
+      data.links || '',
+      data.github || '',
+      data.cvUrl || '',
+      data.cover || ''
+    ]);
+
+    // Send notification email to receiver
+    var to = 'people@deeptrack.io'; // updated to company HR email
+    var subject = 'New application — ' + (data.jobTitle || '') + ' — ' + (data.firstName || '') + ' ' + (data.lastName || '');
+    var html = '<h2>New application: ' + (data.jobTitle || '') + '</h2>' +
+               '<p><strong>Candidate:</strong> ' + (data.firstName || '') + ' ' + (data.lastName || '') + '</p>' +
+               '<p><strong>Email:</strong> ' + (data.email || '') + '</p>' +
+               '<p><strong>Phone:</strong> ' + (data.phone || '') + '</p>' +
+               '<p><strong>Links:</strong> ' + (data.links || '') + '</p>' +
+               '<p><strong>GitHub:</strong> ' + (data.github || '') + '</p>' +
+               '<p><strong>CV:</strong> <a href="' + (data.cvUrl || '#') + '">View CV</a></p>' +
+               '<h3>Cover letter</h3>' +
+               '<div style="white-space:pre-wrap;">' + (data.cover || '') + '</div>';
+
+    MailApp.sendEmail({
+      to: to,
+      subject: subject,
+      htmlBody: html
+    });
+
+    return ContentService.createTextOutput(JSON.stringify({ok:true})).setMimeType(ContentService.MimeType.JSON);
+  } catch (err) {
+    Logger.log(err.toString());
+    return ContentService.createTextOutput(JSON.stringify({error: err.toString()})).setMimeType(ContentService.MimeType.JSON);
+  }
+}
